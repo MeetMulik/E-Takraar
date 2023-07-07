@@ -1,0 +1,7 @@
+cd server
+pip install virtualenv
+virtualenv venv
+cd .\env\Scripts\activate.ps1
+cd ../..
+pip install -r requirements.txt
+uvicorn main:app --reload
